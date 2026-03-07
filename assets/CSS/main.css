@@ -444,7 +444,7 @@
   }
 }
 .form-title {
-  font-size: clamp(4rem, 5dvw, 4rem);
+  font-size: clamp(4rem, 5dvw, 4.5rem);
   color: black;
 }
 .form-title span {
@@ -503,7 +503,7 @@
 
 @media (min-width: 769px) {
   .form-title {
-    font-size: clamp(3.5rem, 65px, 34em);
+    font-size: clamp(3.5rem, 75px, 34em);
     text-align: center;
     color: black;
   }
@@ -746,6 +746,17 @@
     font-size: 32px;
   }
 }
+.social-box {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-box img {
+  max-width: 80px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
