@@ -12,9 +12,9 @@ This project is a personal portfolio website developed using HTML and CSS. It sh
 - Clean and accessible design
 
 ## Tecnologies ⚙️
-- HTML
-- CSS
-- SCSS
+- <h4 style="color:rgb(6, 174, 213); font-size:20px; margin:0; padding:0;">HTML<h4>
+- <h4 style="color:rgb(6, 174, 213); font-size:20px;  margin:0; padding:0;">CSS<h4>
+- <h4 style="color:rgb(6, 174, 213); font-size:20px;  margin:0; padding:0;">SCSS<h4>
 
 
 ## Folder Structure 📂
@@ -60,10 +60,10 @@ This project is a personal portfolio website developed using HTML and CSS. It sh
 3. Navigate through the different pages using the menu.
 
 ## Author 👤
-Salvatore De Roma
-    <a href="https://www.linkedin.com/in/salvatore-de-roma-755728222" target="_blank" rel="noopener noreferrer"><img src="./assets/img/social_icon/linkedin-2.png" alt="linkedin link salvatore de roma"></a>
-    <a href="https://www.facebook.com/totore.deroma/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/social_icon/facebook.png" alt="facebook link salvatore de roma"></a>
-    <a href="https://www.instagram.com/salvatore_de_roma?igsh=YWVndm5ibGFsbnQy&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="./assets/img/social_icon/instagram-2.png" alt="instagram link salvatore de roma"></a>
+<h4 style="color:rgb(6, 174, 213); font-size:20px; margin:0; padding:0;">SALVATORE DE ROMA<h4>
+    <a href="https://www.linkedin.com/in/salvatore-de-roma-755728222" target="_blank" rel="noopener noreferrer"><img src="./assets/img/social_icon/linkedin-2.png" alt="linkedin link salvatore de roma" width="50"></a>
+    <a href="https://www.facebook.com/totore.deroma/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/social_icon/facebook.png" alt="facebook link salvatore de roma" width="50"></a>
+    <a href="https://www.instagram.com/salvatore_de_roma?igsh=YWVndm5ibGFsbnQy&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="./assets/img/social_icon/instagram-2.png" alt="instagram link salvatore de roma" width="50"></a>
 
 ## License ©
 This project is for educational purposes and personal portfolio. Feel free to use or modify for your own learning.
