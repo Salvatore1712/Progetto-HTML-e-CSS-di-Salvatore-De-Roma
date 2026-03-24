@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salvatore De Roma</title>
-    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
 
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="./src/img/favicon/favicon-96x96.png" sizes="96x96" />
@@ -24,33 +24,34 @@
 
 <body>
     <!-- GRID CONTAINER  -->
-    <div id="grid-container">
-        <header class="header">
-            <img src="./src/img/svg/logo_deroma_salvatore.svg" alt="logo salvatore de roma web developer">
+    <div class="flex_container">
 
-            <!-- check input -->
-            <input type="checkbox" name="btn-menu" id="btn-menu">
-            <label for="btn-menu">
-                <span class="menu-icon"></span>
+        <!-- HEADER -->
+        <header class="header">
+            <img src="./src/img/svg/logo_deroma_salvatore.svg" alt="logo salvatore de roma web developer" class="header__image">
+
+            <!-- MENU HAMBURGER -->
+            <input type="checkbox" name="btn-menu" id="btn_menu" class="header__btn__menu">
+            <label for="btn_menu">
+                <span class="header__btn__menu-toggle"></span>
             </label>
 
             <!-- navigation menu -->
             <nav class="menu">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="./assets/project_page/index.html">PROJECT</a></li>
-                    <li><a href="./assets/about_page/index.html">ABOUT ME</a></li>
-                    <li><a href="./assets/contact_page/index.html">CONTACTS</a></li>
+                <ul class="menu__list">
+                    <li class="menu__list__items"><a href="index.html">HOME</a></li>
+                    <li class="menu__list__items"><a href="./project_page.html">PROJECT</a></li>
+                    <li class="menu__list__items"><a href="./about_page.html">ABOUT ME</a></li>
+                    <li class="menu__list__items"><a href="./contact_page.html">CONTACTS</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- hero section -->
+        <!-- HERO SECTION -->
         <main class="hero grid-items">
-            <h3 class="title-name">Salvatore De Roma</h3>
-            <h1>WEB<br>DEVELOPER</h1>
-            <h2>Turning <span>concept</span> into interactive websites</h2>
-
+            <h3 class="hero__name">Salvatore De Roma</h3>
+            <h1 class="hero__title">WEB<br>DEVELOPER</h1>
+            <h2 class="hero__title--small">Turning <span class="blue__color">concept</span> into interactive websites</h2>
         </main>
 
         <!-- project section -->
@@ -58,17 +59,12 @@
             <h2 class="things-text">Build your <span>Digital </span>presence</h2>
             <div class="flex">
                 <p>I help companies and professionals create a powerful, authentic digital presence that fuels growth.
-
-Every project comes to life with a strategic vision: diving into objective analysis, crafting purposeful design, and executing precise technical development. 
-
-                    development.
-
+                    Every project comes to life with a strategic vision: diving into objective analysis, crafting purposeful design, and executing precise technical development.
                     A website is not just a showcase, but a positioning tool designed to attract clients and strengthen long-term value.</p>
                 <br>
                 <button class="btn"><a href="./assets/contact_page/index.html">COMNTACT ME</a></button>
             </div>
         </section>
-        <div class="spacer"></div>
 
         <section id="animation-word" class="is-visible">
             <h3><span id="anim-1">MODERN</span></h3>
@@ -96,15 +92,12 @@ Every project comes to life with a strategic vision: diving into objective analy
             </div>
 
             <div class="box-info-footer">
-                <p>+39 3408312740 @ 2026 Salvatore De Roma Web Developer<br>
+                <p>@ 2026 Salvatore De Roma Web Developer<br>
                 <a href="mailto:info@salvatorederoma.it">info@salvatorederoma.it</a></p>
             </div>
             
         </footer>
     </div>
-    <!-- SCRIPT -->
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+    
 </body>
 </html>

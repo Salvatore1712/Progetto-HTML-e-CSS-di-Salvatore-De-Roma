@@ -1,0 +1,43 @@
+@use "../abstract/variables";
+
+// HERO SECTION
+.hero {
+    display: flex;
+    flex-direction: column;
+    // border: variables.$debugBorder;
+    justify-content: space-between;
+    align-items: left;
+    margin-top: 40px;
+    height: calc(94vh - 40px);
+    width: 100%;
+    overflow: hidden;
+    
+    @media (min-width:767px) { //media hero
+        padding: 0 16px 0 16px;
+    }
+
+    &__name {
+        font-weight: 100;
+    }
+
+    &__title {
+        font-size: 30vw;
+        word-break: break-all;
+        line-height: 0.8em;
+        font-weight: bold;
+
+        @media (min-width:767px) { //media hero
+            line-height: 0.8em;
+            font-size: clamp(15rem, 20vw, 20rem);
+        }
+    }
+
+    &__title--small {
+        font-weight: 400;
+        font-size: 22px;
+
+        @media (min-width:767px) { //media hero
+            font-size: clamp(3em, 30px, 6em);
+        }
+    }
+}

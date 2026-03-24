@@ -1,14 +1,13 @@
-// Variable for style
+// VARIABLES
 
-// IMPORT GOOGLE FONT"Figtree"
+// IMPORT GOOGLE FONT "Figtree"
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 $totalBlack: #000;
 $totalWhite: #fff;
-$secondaryColor: rgb(6, 174, 213);
-$darkSecondaryColor: #018fae;
-$fontCustom: "Figtree", sans-serif;
+$colorBlue: rgb(6, 174, 213);
+$colorBlueDark: #018fae;
+$fontFamily: "Figtree", sans-serif;
 $fontSize: 16px;
 $debugBorder: 1px solid salmon;
-$radius: 10px;
-$piGreco: 3.16px;
+$radiusBorder: 10px;
