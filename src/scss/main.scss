@@ -1,26 +1,25 @@
 // MAIN SCSS STYLE SITE
 
 // IMPORT VARIABLES
-@use "../scss/abstract/variables";
+@use "./abstract/variables" as variables;
 
 // IMPORT HEADER STYLE
-@use "./sections/header";
+@use "./sections/header" as header;
 
 // IMPORT HOME_PAGE STYLE
-@use "../scss/sections/homePage";
-// IMPORT ABOUT_PAGE STYLE
+@use "./sections/homePage" as homePage;
 
+// IMPORT ABOUT PAGE STYLE
+@use "./sections/abouteMePage" as aboutPage;
 
 // IMPORT PROJECT_PAGE STYLE
-@use "../scss/sections/projectPageStyle";
+@use "./sections/projectPageStyle" as projectPage;
 
 // IMPORT CONTACT_PAGE STYLE
 
 
 // BUTTON COMPONENT STYLE
-@use "./components/button";
-
-// FOOTER STYLE
+@use "./components/button" as button;
 
 
 // CV PAGE IMPORT
@@ -174,4 +173,9 @@ a {
             // border: 1px solid saddlebrown;
         }
     }
+}
+
+.spacer {
+    height: 200px;
+    width: 100%;
 }

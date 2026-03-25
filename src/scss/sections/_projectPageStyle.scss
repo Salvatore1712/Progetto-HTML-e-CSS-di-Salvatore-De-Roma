@@ -1,4 +1,4 @@
-@use "../abstract/variables";
+@use "../abstract/variables" as variables;
 
 // STYLE PROJECT PAGE
 //SECTION PROJECT
@@ -9,6 +9,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    &__text {
+        margin-bottom: 24px;
+    }
 
     &__title {
         font-size: 30px;
@@ -43,7 +47,7 @@
     }
     @media (min-width:1024px) {
         margin-top: 160px;
-        width: 80%;
+        max-width: 80%;
 
         &__title {
             font-size: clamp(3em, 30px, 6em);
@@ -52,12 +56,11 @@
         &__box {
             margin-top: 24px;
             padding-top: 16px;
-            width: 50%;
+            width: 70%;
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
-            width: 80%;
         }
         &__text {
             font-size: 22px;
