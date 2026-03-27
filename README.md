@@ -1,69 +1,163 @@
-# <h1 style="color:rgb(6, 174, 213); font-size:35px;">HTML & CSS Project by Salvatore De Roma</h1>
-<img src="./assets/img/svg/logo02_white.svg">
+# Portfolio Website | Salvatore De Roma
 
-## <h4 style="color:rgb(6, 174, 213); font-size:25px; margin:0; padding:0;">Overview 👀</h4>
-This project is a personal portfolio website developed using HTML and CSS. It showcases various sections including Home, About, CV, Projects, and Contact. The design is modern, responsive, and aims to provide a clear presentation of skills, experiences, and contact information.</p>
+![Logo del progetto](./src/img/svg/logo02_white.svg)
 
-## <h4 style="color:rgb(6, 174, 213); font-size:25px; margin:0; padding:0;">Features 🧰</h4>
-- Multi-page structure: Home, About, CV, Projects, Contact
-- Responsive layout for desktop and mobile devices
-- Custom CSS and SCSS organization
-- Modular components for buttons and social icons
-- Clean and accessible design
+Portfolio personale multipagina realizzato in HTML e SCSS per presentare profilo, progetti e contatti in una struttura chiara, responsive e modulare.
 
-## <h4 style="color:rgb(6, 174, 213); font-size:25px; margin:0; padding:0;">Tecnologies ⚙️</h4>
-- HTML
-- CSS
+## Obiettivo Del Progetto
+
+L'obiettivo del progetto è creare un sito portfolio statico che:
+
+- presenti in modo professionale il profilo di Salvatore De Roma;
+- raccolga in sezioni distinte Home, About, Projects, CV e Contact;
+- mantenga una base di codice semplice da aggiornare;
+- usi SCSS modulare per gestire layout, componenti e responsive design;
+- applichi una nomenclatura BEM coerente nelle classi principali.
+
+## Caratteristiche Principali
+
+- Sito multipagina con pagine HTML separate.
+- Layout responsive per mobile, tablet e desktop.
+- Header con menu mobile e navigazione adattiva.
+- SCSS organizzato per `abstract`, `components` e `sections`.
+- CSS compilato in `dist/css/main.css`.
+- Componenti riutilizzabili, come il bottone `.btn`.
+
+## Stack Tecnologico
+
+- HTML5
 - SCSS
+- CSS3
+- Google Fonts: `Figtree`
 
+## Struttura Del Progetto
 
-## <h4 style="color:rgb(6, 174, 213); font-size:25px; margin:0; padding:0;">Folder Structure 📂</h4>
-```
-├── btn.html
+```text
+.
+├── CV_page.html
+├── README.md
+├── about_page.html
+├── contact_page.html
 ├── index.html
-├── assets/
-│   ├── about_page/
-│   │   └── index.html
-│   ├── contact_page/
-│   │   └── index.html
-│   ├── CV_page/
-│   │   └── index.html
-│   ├── project_page/
-│   │   └── index.html
-│   ├── CSS/
-│   │   ├── main.css
-│   │   ├── main.scss
-│   │   ├── abstract/
-│   │   │   └── _variables.scss
-│   │   ├── components/
-│   │   │   ├── _button.scss
-│   │   │   └── _socialStyle.scss
-│   │   └── sections/
-│   │       ├── _aboutPage.scss
-│   │       ├── _contactPage.scss
-│   │       ├── _cvPageStyle.scss
-│   │       ├── _footerStyle.scss
-│   │       ├── _header.scss
-│   │       ├── _homepageStyle.scss
-│   │       └── _projectPage.scss
-│   ├── img/
-│   │   ├── favicon/
-│   │   │   └── site.webmanifest
-│   │   ├── social_icon/
-│   │   └── svg/
-│   ├── js/
+├── project_page.html
+├── dist
+│   └── css
+│       ├── main.css
+│       └── main.css.map
+└── src
+    ├── img
+    │   ├── favicon
+    │   ├── social_icon
+    │   ├── svg
+    │   ├── foto_salvatore_deRoma.jpg
+    │   ├── js_copertina_progetto.jpg
+    │   └── project_placeHolder.jpg
+    ├── js
+    └── scss
+        ├── abstract
+        │   └── _variables.scss
+        ├── components
+        │   └── _button.scss
+        ├── sections
+        │   ├── _abouteMePage.scss
+        │   ├── _contactPage.scss
+        │   ├── _cvPage.scss
+        │   ├── _header.scss
+        │   ├── _homePage.scss
+        │   └── _projectPageStyle.scss
+        └── main.scss
 ```
 
-## <h4 style="color:rgb(6, 174, 213); font-size:25px; margin:0; padding:0;">How to Use 💻</h4>
-1. Clone or download the repository.
-2. Open `index.html` in your browser to view the homepage.
-3. Navigate through the different pages using the menu.
+## Organizzazione SCSS
 
-## <h4 style="color:rgb(6, 174, 213); font-size:25px; margin:0; padding:0;">Author 👤</h4>
-<h4 style="color:white; font-size:20px; margin:0; padding:0;">SALVATORE DE ROMA<h4>
-    <a href="https://www.linkedin.com/in/salvatore-de-roma-755728222" target="_blank" rel="noopener noreferrer"><img src="./assets/img/social_icon/linkedin-2.png" alt="linkedin link salvatore de roma" width="50"></a>
-    <a href="https://www.facebook.com/totore.deroma/" target="_blank" rel="noopener noreferrer"><img src="./assets/img/social_icon/facebook.png" alt="facebook link salvatore de roma" width="50"></a>
-    <a href="https://www.instagram.com/salvatore_de_roma?igsh=YWVndm5ibGFsbnQy&utm_source=qr" target="_blank" rel="noopener noreferrer"><img src="./assets/img/social_icon/instagram-2.png" alt="instagram link salvatore de roma" width="50"></a>
+Il file entrypoint è `src/scss/main.scss`, che importa i moduli del progetto:
 
-## <h4 style="color:rgb(6, 174, 213); font-size:25px; margin:0; padding:0;">License ©</h4>
-This project is for educational purposes and personal portfolio. Feel free to use or modify for your own learning.
+- `abstract/_variables.scss`: variabili globali di colori, font e radius.
+- `components/_button.scss`: componenti riutilizzabili.
+- `sections/*.scss`: stili specifici delle varie sezioni e pagine.
+- `dist/css/main.css`: output compilato pronto per il browser.
+
+## Convenzione BEM Negli SCSS
+
+Nel progetto viene usata una nomenclatura in stile BEM per mantenere leggibili blocchi e sotto-elementi.
+
+Esempi reali presenti nel codice:
+
+```scss
+.header {
+    &__image { ... }
+}
+
+.menu {
+    &__list {
+        &__items { ... }
+    }
+}
+
+.hero {
+    &__title { ... }
+    &__title--small { ... }
+}
+
+.form {
+    &__fieldset { ... }
+    &__group { ... }
+    &__input {
+        &__areaText { ... }
+    }
+}
+```
+
+Lettura rapida:
+
+- `.hero` è il block
+- `.hero__title` è un elemento del block
+- `.hero__title--small` è un modifier dell'elemento
+
+Nota tecnica: in alcuni punti il progetto usa una variante molto annidata, ad esempio `.menu__list__items` o `.form__input__areaText`. Funziona, ma in ottica BEM più rigorosa potresti in futuro semplificare alcuni nomi per rendere i blocchi ancora più chiari.
+
+## Pagine Del Sito
+
+- `index.html`: homepage e presentazione principale.
+- `about_page.html`: sezione descrittiva personale.
+- `project_page.html`: raccolta progetti.
+- `contact_page.html`: form contatti.
+- `CV_page.html`: pagina CV.
+
+## Come Avviare Il Progetto
+
+Per visualizzare il sito:
+
+1. Clona o scarica la repository.
+2. Apri `index.html` nel browser.
+3. Naviga tra le altre pagine dal menu.
+
+## Compilazione SCSS
+
+Per ricompilare il CSS a partire dagli SCSS:
+
+```bash
+sass src/scss/main.scss dist/css/main.css
+```
+
+Il source map viene generato in `dist/css/main.css.map`.
+
+## Identita Visiva
+
+Il progetto usa una palette semplice e riconoscibile, definita in `src/scss/abstract/_variables.scss`:
+
+- `rgb(6, 174, 213)` come colore principale
+- `#018fae` come variante scura
+- `#000` e `#fff` per contrasto e leggibilita
+
+## Autore
+
+Salvatore De Roma
+
+- LinkedIn: <https://www.linkedin.com/in/salvatore-de-roma-755728222>
+- Facebook: <https://www.facebook.com/totore.deroma/>
+- Instagram: <https://www.instagram.com/salvatore_de_roma>
+
+## Licenza
+
+Progetto realizzato per finalita formative e di portfolio personale.
