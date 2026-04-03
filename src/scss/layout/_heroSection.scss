@@ -18,11 +18,10 @@
     
 
     &__title {
-        font-size: clamp(5.5rem, 1.8182rem + 11.9091vw, 15rem);
-        overflow-wrap: break-word;
+        font-size: clamp(4rem, 1.5rem + 9.9091vw, 12rem);
+        word-break: break-all;
         line-height: 0.8em;
         font-weight: bold;
-        hyphens: auto;
     }
 
     &__title--small {
