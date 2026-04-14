@@ -310,7 +310,7 @@
 }
 @media (min-width: 1024px) {
   .hero__title {
-    font-size: clamp(8rem, 7.5rem + 10vw, 13rem);
+    font-size: clamp(8rem, 7.5rem + 7vw, 13rem);
   }
 }
 .hero__title--small {
