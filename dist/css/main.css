@@ -308,6 +308,11 @@
   animation: animationShow 2s cubic-bezier(0.7, 0.46, 0.73, 0.82) forwards;
   z-index: 0;
 }
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: clamp(12rem, 8rem + 10vw, 15rem);
+  }
+}
 .hero__title--small {
   font-weight: 400;
   font-size: 22px;

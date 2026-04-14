@@ -24,6 +24,10 @@
         font-weight: bold;
         animation: animationShow 2s cubic-bezier(.7,.46,.73,.82) forwards;
         z-index: 0;
+
+        @media (min-width:1024px) {
+            font-size: clamp(12rem, 8rem + 10vw, 15rem);
+        }
     }
 
     &__title--small {
