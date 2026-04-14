@@ -1,30 +1,17 @@
 // ***** MAIN SCSS STYLE SITE *****
+// ********************************
 
+// IMPORT ABSTRACT
+@use "abstract" as abstract_folder;
 
-// IMPORT VARIABLES
-@use "./abstract/variables" as variables;
-
-
-// IMPORT LAYOUT STYLE
-@use "./layout/header" as header;
-@use "./layout/footerStyle" as footer;
-@use "./layout/heroSection" as hero_section;
-@use "./components/cardStyle" as card_style;
-
+// IMPORT LAYOUT SECTION PAGE
+@use "layout" as layout_section;
 
 // IMPORT PAGES STYLE
-@use "./pages/homePage" as homePage;
-@use "./pages/abouteMePage" as about_Page;
-@use "./pages/projectPageStyle" as project_Page;
-@use "./pages/contactPage" as contact_Page;
-@use "./pages/cvPage" as Cv_Page;
+@use "pages" as pages_style;
 
-// BUTTON COMPONENT STYLE
-@use "./components/button" as button;
+// IMPORT COMPONENTS
+@use "components" as components;
 
-// IMPORT RESET & NORMALIZE
-@use "./base/reset" as reset;
-@use "./base/normalize" as normalize;
-
-// IMPORT TRANSACTIONS
-@use "./abstract/transactions" as transactions;
+// IMPORT BASE SETTINGS
+@use "base" as base_folder;
